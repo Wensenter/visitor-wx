@@ -1,0 +1,31 @@
+<!--pages/telLogin/telLogin.wxml-->
+<view class="wrap">
+  <view class="logo-wrap">
+    <image class="logo" src="../../image/logo-blue.png"></image>
+    <text class="logo-text">智能访客预约系统</text>
+  </view>
+  <form class="login-form">
+    <view class="form-item">
+      <view class="input-box">
+        <input placeholder="请输入手机号码" bindinput="handletelInput" value="{{telNumber}}" type="number"></input>
+      </view>
+    </view>
+    <view class="telError">{{telError}}</view>
+    <view class="form-item">
+      <view class="input-box m-r-md">
+        <input placeholder="请输入验证码" type="number" bindinput="handleyzmInput" value="{{yzmNumber}}"></input>
+      </view>
+      <button class="yzm-btn">获取验证码</button>
+    </view>
+    <view class="yzmError">{{yzmError}}</view>
+    <radio-group bindchange="radioChange">
+      <label>
+        <radio value="visitor" checked />我是访客
+      </label>
+      <label>
+        <radio value="staff" />我是员工
+      </label>
+    </radio-group>
+    <button class="login-btn" bindtap="handleLogin">登录</button>
+  </form>
+</view>

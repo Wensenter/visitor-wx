@@ -1,0 +1,9 @@
+<!--pages/navigation/navigation.wxml-->
+<view class="navigation-wrap">
+  <view class="map-wrap">
+    <map class="navigation-map"></map>
+    <cover-view class="use-baidu-btn">
+      <button>使用百度地图</button>
+    </cover-view>
+  </view>
+</view>

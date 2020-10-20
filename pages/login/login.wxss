@@ -1,0 +1,114 @@
+/* pages/telLogin/telLogin.wxss */
+.m-r-md{
+  margin-right: 26rpx;
+}
+.wrap{
+  width: 100%;
+  min-height: 100vh;
+  background: #F6F7FB;
+}
+.logo-wrap{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo{
+  width: 88rpx;
+  height: 102rpx;
+  margin-bottom: 52rpx;
+}
+.logo-text{
+  font-size: 48rpx;
+  color: #4A4A4A;
+  font-weight: 6000;
+  line-height: 67rpx;
+}
+.login-form{
+  display: block;
+  margin: 139rpx auto 0;
+  width: 592rpx;
+}
+.form-item{
+  width: 100%;
+  display: flex;
+  height: 77rpx;
+}
+.input-box{
+  flex: 1;
+  border: 1rpx solid #eee;
+  box-shadow: 0rpx 8rpx 16rpx 0rpx #DBE4F8;
+  background: #fff;
+  border-radius: 16rpx;
+  height: 100%;
+  padding-left: 27rpx;
+}
+.input-box input{
+  outline: none;
+  height: 100%;
+  font-size: 30rpx;
+}
+.input-box input::-webkit-input-placeholder{
+  color: #BBBBBB;
+  font-size: 30rpx;
+}
+.yzm-btn{
+  width: 210rpx !important;
+  color: #fff;
+  font-size: 30rpx;
+  background: #F9B23C;
+  box-shadow: 0px 6px 16px 0px #F6BC5C;
+  border-radius: 16rpx;
+  padding: 18rpx 30rpx;
+}
+.yzmError,.telError{
+  font-size: 24rpx;
+  color: red;
+  text-indent: 20rpx;
+  margin-bottom: 30rpx;
+  margin-top: 5rpx;
+}
+radio-group{
+  margin: 55rpx 65rpx 42rpx;
+  display: flex;
+  justify-content: space-between;
+}
+/* radio重置 */
+radio .wx-radio-input{ 
+  /* 自定义样式.... */
+    width: 32rpx;
+    height: 32rpx;
+    border: 3rpx solid #4A90E2;
+    margin-top: -4rpx;
+    border-radius: 50%;
+    background: #fff;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+  border: 3rpx solid #4A90E2 !important;
+  background: #fff !important;
+}
+/* 选中后的 对勾样式 */
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 18rpx;
+  height: 18rpx;
+  text-align: center;
+  font-size: 0;
+  background: #4A90E2;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.login-btn{
+  width: 593rpx !important;
+  height: 98rpx;
+  padding: 24rpx 220rpx;
+  font-size: 36rpx;
+  color: #fff;
+  font-weight: 600;
+  line-height: 50rpx;
+  background: #4A90E2;
+  box-shadow: 0rpx 6rpx 16rpx 0rpx #89B6F4;
+  border-radius: 16rpx;
+}

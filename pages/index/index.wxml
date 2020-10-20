@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="login-wrap">
+  <image src="../../image/bg.png" class="bg"></image>
+  <view class="login-logo">
+    <image class="logo" src="../../image/logo.png"></image>
+    <text class="logo-text">智能访客预约系统</text>
+  </view>
+  <view class="btns">
+    <button hover-class="none" bindtap="toVisitor">我是访客</button>
+    <button hover-class="none" bindtap="toStaff">我是员工</button>
+    <button class="navigation" hover-class="none" bindtap="toNabigation">位置导航</button>
+  </view>
+  <navigator hover-class="none" class="toPhoneLogin" url="../login/login">
+    <image class="phone" src="../../image/mobile.png"></image>
+    <text>短信验证码登录</text>
+  </navigator>
+</view>

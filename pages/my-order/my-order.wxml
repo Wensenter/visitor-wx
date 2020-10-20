@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="head">
+    <navigator url="/pages/search/search" hover-class="none" class="toSearch">
+      <text>深圳</text>
+      <image class="arrow-down" src="/image/down.png"></image>
+    </navigator>
+    <view class="input-box">
+      <image src="/image/search.png"></image>
+      <input placeholder="请输入物业名称" placeholder-class="phcolor" />
+    </view>
+  </view>
+  <scroll-view class="type-list" scroll-x="true">
+    <view wx:for="{{typeList}}" class="{{index === activeIndex? 'active' : ''}}" data-current-index="{{index}}" bindtap="select">
+      {{item.text}}
+    </view>
+  </scroll-view>
+  <view wx:for="{{orderList}}">
+    <view class="order-head">
+      <view class="dot">
+      </view>
+      <text></text>
+    </view>
+  </view>
+</view>
